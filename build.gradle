@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation ('org.testng:testng:7.8.0')
+    runtimeOnly ("org.junit.support:testng-engine:1.0.4")
+    implementation ('com.github.javafaker:javafaker:1.0.2')
+    implementation("com.codeborne:selenide:6.19.1")
+
+
+
+}
+
+test {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
+}

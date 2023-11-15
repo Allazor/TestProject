@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uiTests.google.GoogleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-11-15T12:36:31" hostname="MacBook-Air-Asan.local" time="11.49">
+  <properties/>
+  <testcase name="checkSearchInput" classname="uiTests.google.GoogleTest" time="11.49"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 15, 2023 6:36:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 117
+]]></system-err>
+</testsuite>

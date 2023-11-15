@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Test">
+        <groups>
+            <run>
+                <include name="Ui"/>
+                <include name="UnitTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="uiTests.google.GoogleTest">
+                <methods>
+                    <include name="testForSearchByName"/>
+                    <include name="testForSearchByFullName"/>
+                    <include name="checkSearchInput"/>
+                    <include name="checkTheToolTip"/>
+                </methods>
+            </class>
+            <class name="unitTest.UnitTests">
+                <methods>
+                    <include name="testIsAdult"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
